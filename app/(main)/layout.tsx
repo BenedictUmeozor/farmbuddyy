@@ -22,9 +22,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${inter.className} antialiased`}>
-      <NextTopLoader showSpinner={false} color="#4CAF50" />
-      <PreloadHomePageResources />
-      {children}
+        <NextTopLoader showSpinner={false} color='#4CAF50' />
+        <PreloadHomePageResources />
+        {children}
       </body>
     </html>
   );

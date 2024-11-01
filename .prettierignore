@@ -1,0 +1,13 @@
+node_modules/
+.idea/
+.next/
+.env
+.npmrc
+components.json
+*.d.ts
+next.config.ts
+*.json
+*config.mjs
+*config.ts
+*.md
+assets/

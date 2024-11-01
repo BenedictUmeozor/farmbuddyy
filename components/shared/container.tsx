@@ -1,9 +1,9 @@
-import { cn } from "@/lib/utils";
-import { ReactNode } from "react";
+import { cn } from '@/lib/utils';
+import { ReactNode } from 'react';
 
 const Container = ({
   children,
-  className = "",
+  className = '',
 }: {
   children: ReactNode;
   className?: string;
@@ -11,7 +11,7 @@ const Container = ({
   return (
     <div
       className={cn(
-        "container mx-auto max-w-[1440px] px-4 md:px-6 lg:px-8",
+        'container mx-auto max-w-[1440px] px-4 md:px-6 lg:px-8',
         className,
       )}
     >

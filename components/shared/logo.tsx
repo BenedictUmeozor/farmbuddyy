@@ -1,13 +1,13 @@
-import Link from "next/link";
-import logo from "@/assets/logo.svg";
-import Image from "next/image";
-import { Jockey_One } from "next/font/google";
-import { cn } from "@/lib/utils";
+import Link from 'next/link';
+import logo from '@/assets/logo.svg';
+import Image from 'next/image';
+import { Jockey_One } from 'next/font/google';
+import { cn } from '@/lib/utils';
 
-const jockyFont = Jockey_One({ subsets: ["latin"], weight: "400" });
+const jockyFont = Jockey_One({ subsets: ['latin'], weight: '400' });
 
 const HeaderLogo = ({
-  className = "",
+  className = '',
   isFooter = false,
 }: {
   className?: string;
@@ -15,23 +15,23 @@ const HeaderLogo = ({
 }) => {
   return (
     <Link
-      href="/"
+      href='/'
       className={cn(
-        "flex items-center gap-2 text-white transition-colors",
+        'flex items-center gap-2 text-white transition-colors',
         className,
-        !isFooter && "hover:text-primary",
-        isFooter && "transition-colors hover:text-white/75",
+        !isFooter && 'hover:text-primary',
+        isFooter && 'transition-colors hover:text-white/75',
       )}
     >
       <Image
         src={logo}
-        alt="logo"
+        alt='logo'
         width={100}
         height={100}
         priority
-        className="w-8 lg:w-10"
+        className='w-8 lg:w-10'
       />
-      <span className={cn(jockyFont.className, "text-2xl lg:text-3xl")}>
+      <span className={cn(jockyFont.className, 'text-2xl lg:text-3xl')}>
         Farmbuddy
       </span>
     </Link>
